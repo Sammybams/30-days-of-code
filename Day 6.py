@@ -57,6 +57,5 @@ def order(unsorted):
         main_non_consecutive_list = sorted(list(set(sorted1)-set(maxlist1)))
     else:
         raise AssertionError("Invalid input. Only array of unique integers is allowed.")
-    return (len(maxlist1), main_non_consecutive_list)
-    
-print(order([100,4,200,1,3,2]))
+    return (len(maxlist1), main_non_consecutive_list),main_consecutive_list
+print(order([1,2,3,4,6,7,8,100,200]))
